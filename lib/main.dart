@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import './demo/drawer_deme.dart';
 import './demo/bottom_navigation_bar_demo.dart';
 import './demo/listview_demo.dart';
-import './demo/hello_demo.dart';
+import './demo/basic_demo.dart';
+import './demo/layout_demo.dart';
 
 void main() => runApp(App());
 
@@ -75,13 +76,10 @@ class Home extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
+              //tap标签内容 视图
               ListViewDemo(),
-              HelloDemo(),
-              Icon(
-                Icons.directions_bike_sharp,
-                size: 128,
-                color: Colors.black12,
-              ),
+              LayoutDemo(),
+              BasicDemo(),
             ],
           ), //ListViewDemo(), //挂载组件
           drawer: DrawerDemo(),
