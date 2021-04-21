@@ -7,7 +7,8 @@ class ListViewDemo extends StatelessWidget {
         color: Colors.white,
         margin: EdgeInsets.all(8.0),
         child: Column(
-          children: <Widget>[
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
             Image.network(posts[index].imageUrl),
             SizedBox(height: 5.0),
             Text(

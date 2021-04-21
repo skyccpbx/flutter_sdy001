@@ -4,6 +4,8 @@ import './demo/bottom_navigation_bar_demo.dart';
 import './demo/listview_demo.dart';
 import './demo/basic_demo.dart';
 import './demo/layout_demo.dart';
+import './demo/view_demo.dart';
+import './demo/sliver_demo.dart';
 
 void main() => runApp(App());
 
@@ -11,9 +13,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //home: Hello(),
       debugShowCheckedModeBanner: false, // 去掉右上角debug
-      home: Home(), // 默认需要显示的部件内容
+      //home: Home(), // 默认需要显示的部件内容
+      home: Home(),
       theme: ThemeData(
           primarySwatch: Colors.blue,
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5)), //tap点击背景色
@@ -26,7 +28,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           backgroundColor: Colors.grey[100],
           appBar: AppBar(
@@ -69,8 +71,11 @@ class Home extends StatelessWidget {
                   icon: Icon(Icons.dashboard_customize),
                 ),
                 Tab(
+                  icon: Icon(Icons.view_quilt),
+                ),
+                Tab(
                   icon: Icon(Icons.directions_bike_sharp),
-                )
+                ),
               ],
             ),
           ),
@@ -79,7 +84,8 @@ class Home extends StatelessWidget {
               //tap标签内容 视图
               ListViewDemo(),
               LayoutDemo(),
-              BasicDemo(),
+              ViewDemo(),
+              SliverDemo(),
             ],
           ), //ListViewDemo(), //挂载组件
           drawer: DrawerDemo(),

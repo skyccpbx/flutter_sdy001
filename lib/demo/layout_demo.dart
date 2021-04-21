@@ -10,7 +10,7 @@ class LayoutDemo extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
+        children: [
           IconBadge(
             Icons.pool,
             //size: 64.0,
@@ -23,7 +23,7 @@ class LayoutDemo extends StatelessWidget {
           IconBadge(
             Icons.airplanemode_active,
             //size: 64.0,
-          )
+          ),
         ], // 图标小部件
       ),
     );
