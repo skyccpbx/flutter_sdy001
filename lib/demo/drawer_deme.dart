@@ -32,7 +32,7 @@ class DrawerDemo extends StatelessWidget {
           ListTile(
             title: Text(
               'Messages',
-              textAlign: TextAlign.right,
+              textAlign: TextAlign.left,
             ),
             trailing: Icon(
               Icons.message,
@@ -44,7 +44,7 @@ class DrawerDemo extends StatelessWidget {
           ListTile(
             title: Text(
               'Favorite',
-              textAlign: TextAlign.right,
+              textAlign: TextAlign.left,
             ),
             trailing: Icon(
               Icons.favorite,
@@ -56,7 +56,7 @@ class DrawerDemo extends StatelessWidget {
           ListTile(
             title: Text(
               'Settings',
-              textAlign: TextAlign.right,
+              textAlign: TextAlign.left,
             ),
             trailing: Icon(
               Icons.settings,
